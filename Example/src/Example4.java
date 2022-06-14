@@ -9,7 +9,7 @@ public class Example4 {
 		 * extends¸¦ ±¸ÇöÇÏ¼¼¿ä
 		 */
 		text2 yn = new text2();
-		yn.ii(3, 10); // ¡Ú¾ê¶û ¹Ø¿¡ ¾ê¶û ¼ø¼­ ¹Ù²î¸é ´äÀÌ ¹Ù²ñ ¿Í¿ì~
+		yn.ii(13, 10); // ¡Ú¾ê¶û ¹Ø¿¡ ¾ê¶û ¼ø¼­ ¹Ù²î¸é ´äÀÌ ¹Ù²ñ ¿Í¿ì~
 		yn.huhu(); // ¡Ú¾ê¶û!!
 
 	}
@@ -30,7 +30,9 @@ class text2 extends text {
 	public void huhu() {
 		if (this.sum % 2 == 0) {
 			System.out.println("Â¦¼öÀÔ´Ï´Ù.");
-		} else {
+		}
+		
+		else {
 			System.out.println("È¦¼öÀÔ´Ï´Ù.");
 		}
 	}

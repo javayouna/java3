@@ -44,7 +44,7 @@ class cba extends abc {
 			this.sum = i + ii;
 			System.out.println(this.sum);
 		}
-		else if (i > ii){
+		else if (i > ii) {
 			do {
 				this.sum += ii; //
 				ii++;

@@ -15,35 +15,29 @@ public class Example6 {
 	
 		
 		Scanner sc = new Scanner(System.in);
-		System.out.println("상품 갯수를 입력하세요. 최대 5번");
-		int user = sc.nextInt();
-		
-		bb yn = new bb();
-		yn.ccc(user);
-		System.out.println();
-		sc.close();
-	}	
-}
-
-class aa {
-	private int cost=42000;
-
-	public void ccc(int i) {
-		if(i<6) {
-			
-		}
-	
-}
-
-
-}
-
-class bb extends aa { 
-	public int sum(int a, int ab){
-		this.cost=a;
-		
-		
-		return.sum*cost;
+		System.out.println("갯수를 입력하세요. 최대 5");
+		int uu = sc.nextInt();
+		b bx = new b();
+		bx.b2(uu);
+		System.out.println(bx.sum);
 	}
-	
+
 }
+
+class a {
+	protected int user; 
+	protected int sum;
+	public a() {
+		this.user = 42000;
+
+	}
+}
+
+class b extends a {
+	public void b2(int mm) {
+		sum = this.user * mm;
+		
+	}
+}
+
+	

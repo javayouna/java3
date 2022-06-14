@@ -1,33 +1,35 @@
-import java.util.Scanner;
 
 public class imsi {
 
 	public static void main(String[] args) {
-		/*응용문제
-		 * 더블 반복문을 이용하세요~
-		 * (while~do~while)
-		 	* 1+1=2 2+1=3 2+2+4 3+1=4 3+2=5 3+3=6 4+1=5 4+2=6 4+3=7 4+4=8
-		 		*/
-					
-			int w=1;
-			int total=0;
-			while(w<=4) {
-				int ww=1;
-				do {
-					total=(w+ww);
-					System.out.println(w+"+"+ww+"="+(w+ww));
-					ww++;
-				}while(ww<=w);
-				
-				w++;
-			}
+	    Person park = new Person("홍팍", "010-1234-5678");
 
-		
+	    
+	    /* 1. 게터를 호출하여 필드값을 얻으시오. */
+	    System.out.printf("이 름: %s\n", park.getName());
+	    System.out.printf("연락처: %s\n", park.getPhoneNumber());
+	  }
+	} 
+
+	class Person {
+	  // 필드
+	  private String name;
+	  private String phoneNumber;
+	
+	
+	public Person(String n,String p) {
+		name=n;
+		phoneNumber=p;		
+	}
+	
+	public String getName() {
+		return name;
+	}
+	public String getPhoneNumber() {
+		return phoneNumber;
+	}
 		
 	}
-}
-
-		
 	
 
 
